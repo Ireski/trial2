@@ -1639,7 +1639,7 @@ footer {
 #wordsearch ul li {
   float: left;
   width: 12%;
-  background-color: #ffb400;
+  background-color: red;
   list-style: none;
   margin-right: 0.5%;
   margin-bottom: 0.5%;
