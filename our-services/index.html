@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ireski Tech - The Future Starts Here</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/top-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#eee]">
+    <!-- Loader -->
+    <!-- <div id="loader">
+      <img
+        src="images/ireski-tech-logo-2.png"
+        alt="Ireski Tech"
+        class="h-16 mb-20"
+      />
+      <div class="text-row" id="row"></div>
+    </div> -->
+
+    <header class="w-full relative z-20 overflow-hidden">
+      <div class="max-w-[1200px] mx-auto my-5">
+        <div
+          class="px-5 h-[60px] border-2 border-gray-200 rounded-full bg-white flex items-center justify-between overflow-hidden relative left-[50%] translate-x-[-50%] w-[95%]"
+        >
+          <!-- <h2 class="font-semibold">IRESKI TECH</h2> -->
+          <img src="/images/main-logo.png" alt="" class="h-20 lg:h-24 relative -left-2" />
+          <!-- Laptop nav -->
+          <nav class="hidden lg:block">
+            <ul class="flex items-center gap-9">
+              <a
+                href="/"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >Home</a
+              >
+              <a
+                href="/about"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >About Us</a
+              >
+              <a
+                href="/courses"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >Courses</a
+              >
+              <a
+                href="/our-services"
+                class="nav-link font-semibold text-[17px] text-gray-400 active"
+                >Services</a
+              >
+              <a
+                href="/contact"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >Contact Us</a
+              >
+            </ul>
+          </nav>
+          <!--  -->
+          <a
+            href="/contact"
+            class="hidden lg:block bg-[#06113f] font-semibold text-white py-2 px-4 lg:px-9 rounded-full linker"
+            ><span class="relative z-10">Register Now</span></a
+          >
+          <button class="block lg:hidden cursor-pointer" id="mobile-btn">
+            <i class="fa-solid fa-bars text-2xl text-[#ffb400]"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+        <!-- Mobile nav -->
+     <div class="block lg:hidden fixed top-0 bottom-0 left-0 right-0 bg-[#0000008c] backdrop-blur-sm z-30 mobile-backdrop" id="mobile-back"></div>
+        <nav class="block lg:hidden fixed top-0 bottom-0 right-0 w-[80%] z-30 bg-white p-6 h-full transition-all ease-in-out duration-700 mobile-menu" id="mobile-nav">
+          <div class="flex items-center justify-between">
+            <img src="/images/main-logo.png" alt="" class="h-16 lg:h-16" />
+            <button class="" id="close-btn">
+              <i class="fa-solid fa-x text-2xl text-[#ffb400]"></i>
+            </button>
+          </div>
+          <ul class="flex flex-col items-start gap-4 my-7">
+            <a
+            href="/"
+            class="nav-link font-semibold text-[17px] text-gray-400"
+            >Home</a
+            >
+              <a
+              href="/about"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >About Us</a
+                >
+                <a
+                href="/courses"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >Courses</a
+                >
+                <a
+                href="/our-services"
+                class="nav-link font-semibold text-[17px] text-gray-400 active"
+                >Services</a
+                >
+                <a
+                href="/contact"
+                class="nav-link font-semibold text-[17px] text-gray-400"
+                >Contact Us</a
+                >
+              </ul>
+              <!--  -->
+              <div>
+                <a
+                href="/contact"
+                ><button class="relative z-10 bg-[#06113f] font-semibold text-white py-2 w-full rounded-full linker">Register Now</span></a
+                  >
+                </div>
+          <!--  -->
+          <div class="mt-12 flex items-center justify-center gap-3">
+            <a
+            href="#"
+            class="text-3xl text-white bg-[#ffb400] p-[2px] rounded-sm"
+            ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+              href="#"
+              class="text-3xl text-white bg-[#ffb400] p-[2px] rounded-sm"
+              ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a
+                href="#"
+                class="text-3xl text-white bg-[#ffb400] p-[2px] rounded-sm"
+                ><i class="fa-brands fa-instagram"></i
+                  ></a>
+              <a
+              href="#"
+              class="text-3xl text-white bg-[#ffb400] p-[2px] rounded-sm"
+              ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+
+              <ul class="list-none mt-10 flex flex-col gap-4">
+                <li><a href="#" class="text-black hover:text-gray-500"><i class="fa-solid fa-phone text-[#ffb400] mr-3"></i>09068351922</a></li>
+                <li><a href="#" class="text-black hover:text-gray-500"><i class="fa-solid fa-envelope text-[#ffb400] mr-3"></i>ireskitech@gmail.com</a></li>
+                
+              </ul>
+            </nav>
+
+            <!--  -->
+      <section class="service-hero">
+      <div class="service-hero-dots"></div>
+      <div class="service-hero-content">
+        <div class="service-hero-pill">✦ What We Do</div>
+        <h1>Expert Services<br />Built for <em>Your Growth</em></h1>
+        <p>
+          From pixels to solar panels — TechStaz delivers professional
+          solutions that move your business, brand, and career forward.
+        </p>
+        
+      </div>
+    </section>
+
+
+            <!-- SERVICES -->
+    <section class="services-section">
+      <div class="services-intro">
+        <div class="section-label">Our Offerings</div>
+        <h2
+            class="relative text-4xl lg:text-6xl font-bold lg:font-semibold mt-4 mb-6"
+          >
+            Everything You Need<br /><span>Under One Roof</span>
+          </h2>
+        <p class="section-sub">
+          We pair technical depth with creative excellence — delivering results
+          you can see, use, and be proud of.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Website Development -->
+        <div class="svc-card">
+          <div class="svc-card-top">
+            <div class="svc-num">01</div>
+            <div class="svc-icon-wrap">🌐</div>
+            <h3>Website Development</h3>
+            <div class="tagline">Custom-built, high-performance websites</div>
+          </div>
+          <div class="svc-card-body">
+            <p>
+              We engineer fast, secure, and scalable websites tailored to your
+              business goals — from landing pages to full web applications.
+            </p>
+            <ul class="svc-features">
+              <li>Custom HTML/CSS/JS & React development</li>
+              <li>Responsive, mobile-first architecture</li>
+              <li>CMS integration (WordPress, Webflow)</li>
+              <li>API & third-party integrations</li>
+              <li>Speed optimisation & SEO setup</li>
+            </ul>
+            <a href="contact.html" class="svc-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <!-- 2. Website Design -->
+        <div class="svc-card">
+          <div class="svc-card-top">
+            <div class="svc-num">02</div>
+            <div class="svc-icon-wrap">🎨</div>
+            <h3>Website Design</h3>
+            <div class="tagline">Stunning UI/UX that converts visitors</div>
+          </div>
+          <div class="svc-card-body">
+            <p>
+              Great design is more than beautiful — it's strategic. We craft
+              interfaces that guide users, build trust, and grow your brand.
+            </p>
+            <ul class="svc-features">
+              <li>UI/UX wireframing & prototyping (Figma)</li>
+              <li>Brand-consistent visual identity</li>
+              <li>Landing page & conversion design</li>
+              <li>Design systems & style guides</li>
+              <li>Accessibility-first approach</li>
+            </ul>
+            <a href="contact.html" class="svc-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <!-- 3. Graphics Design -->
+        <div class="svc-card">
+          <div class="svc-card-top">
+            <div class="svc-num">03</div>
+            <div class="svc-icon-wrap">✏️</div>
+            <h3>Graphics Design</h3>
+            <div class="tagline">Visual identity that leaves a mark</div>
+          </div>
+          <div class="svc-card-body">
+            <p>
+              From logos to social media creatives — we produce bold, memorable
+              graphics that represent your brand with confidence and clarity.
+            </p>
+            <ul class="svc-features">
+              <li>Logo & brand identity design</li>
+              <li>Social media graphics & templates</li>
+              <li>Flyers, banners & print materials</li>
+              <li>Pitch decks & presentation design</li>
+              <li>Brand guidelines & colour palettes</li>
+            </ul>
+            <a href="contact.html" class="svc-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <!-- 4. CV & Document Editing -->
+        <div class="svc-card">
+          <div class="svc-card-top">
+            <div class="svc-num">04</div>
+            <div class="svc-icon-wrap">📄</div>
+            <h3>CV & Document Editing</h3>
+            <div class="tagline">Professional documents that open doors</div>
+          </div>
+          <div class="svc-card-body">
+            <p>
+              Your CV is your first impression. We craft ATS-optimised, visually
+              professional documents that get you noticed and hired.
+            </p>
+            <ul class="svc-features">
+              <li>Professional CV writing & redesign</li>
+              <li>Cover letter crafting</li>
+              <li>LinkedIn profile optimisation</li>
+              <li>Academic & business document editing</li>
+              <li>Proofreading & formatting</li>
+            </ul>
+            <a href="contact.html" class="svc-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <!-- 5. Solar Installation (WIDE) -->
+        <div class="svc-card wide">
+          <div class="svc-card-top">
+            <div class="svc-num">05</div>
+            <div class="svc-icon-wrap">☀️</div>
+            <h3>Solar/Inverter Installation</h3>
+            <div class="tagline">
+              Clean, reliable energy for homes & businesses in Rivers State
+            </div>
+          </div>
+          <div class="svc-card-body">
+            <div class="svc-card-body-inner">
+              <div>
+                <p>
+                  Say goodbye to generator costs and power cuts. We supply and
+                  install certified solar energy systems tailored to your power
+                  needs and budget — residential or commercial.
+                </p>
+                <ul class="svc-features">
+                  <li>Free site assessment & energy audit</li>
+                  <li>Supply of quality solar panels & inverters</li>
+                  <li>Professional installation by certified engineers</li>
+                </ul>
+              </div>
+              <div>
+                <p style="color: transparent; font-size: 0.9rem">.</p>
+                <ul class="svc-features">
+                  <li>Battery storage & backup systems</li>
+                  <li>Hybrid & off-grid configurations</li>
+                  <li>Post-installation maintenance & support</li>
+                </ul>
+                <div style="margin-top: 20px">
+                  <a href="contact.html" class="svc-link"
+                    >Book a Free Assessment →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- HOW IT WORKS -->
+    <section class="process-section">
+      <div style="text-align: center;" class="">
+        <div class="section-label">How It Works</div>
+        <h2
+            class="relative text-4xl lg:text-5xl font-bold lg:font-semibold text-white mt-3 mb-6"
+          >
+            Our Simple <span>4-Step Process</span>
+          </h2>
+        <p class="section-sub" style="max-width: 520px; margin: 12px auto 0">
+          No stress, no guesswork. We make working with us effortless from first
+          contact to final delivery.
+        </p>
+      </div>
+      <div class="process-track">
+        <div class="process-step">
+          <div class="step-circle">💬</div>
+          <h4>1. Consultation</h4>
+          <p>Tell us your goals, timeline, and budget. We listen first.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">📋</div>
+          <h4>2. Proposal</h4>
+          <p>We send a clear scope, timeline, and price — no hidden fees.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">⚙️</div>
+          <h4>3. Execution</h4>
+          <p>Our team builds, designs, or installs with precision and care.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">🚀</div>
+          <h4>4. Delivery</h4>
+          <p>You receive your final product, trained and fully supported.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="w-full bg-white">
+      <div
+        class="max-w-[1200px] mx-auto px-3 py-24 flex items-center justify-center"
+      >
+        <div
+          class="bg-[#06113f] h-auto lg:h-[400px] px-4 py-12 flex flex-col items-center justify-center gap-7 rounded-xl text-center text-white relative lg:w-[85%]"
+        >
+          <h2
+            class="relative text-4xl lg:text-6xl font-bold lg:font-semibold lg:w-[55%]"
+          >
+            Ready To Work<br /><span>With Us?</span>
+          </h2>
+          <p class="text-xl w-full lg:w-[60%]">
+            Whether it's a website, a logo, your CV, or a solar system — we're ready to deliver. Let's talk.
+          </p>
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-4 w-full">
+            <a
+            href="https://api.whatsapp.com/send/?phone=2349068351922"
+            class="block bg-[#ffb400] font-semibold text-white py-3 px-6 lg:px-9 rounded-full text-center relative z-10 w-1/2 lg:w-[22%] linker"
+            ><span class="relative z-10">Get In Touch</span>
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+            <a
+            href="tel:09068351922"
+            class="block bg-[#ffb400] font-semibold text-white py-3 px-6 lg:px-9 rounded-full text-center relative z-10 w-1/2 lg:w-[22%] linker"
+            ><span class="relative z-10">Call Us</span>
+            <i class="fa-solid fa-phone"></i
+          ></a>
+          </div>
+          <img
+            src="/images/about-icon-1.png"
+            alt=""
+            class="h-28 lg:h-[200px] absolute left-5 bottom-3 about-1"
+          />
+          <img
+            src="/images/about-icon-2.png"
+            alt=""
+            class="hidden lg:block h-28 lg:h-[200px] absolute right-5 top-3 about-1"
+          />
+        </div>
+      </div>
+    </section>
+
+        <!-- ── Footer ────────────────────────────────────────── -->
+    <footer class="w-full bg-[#06113f]">
+      <div class="max-w-[1200px] mx-auto px-5 pt-14 pb-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10"
+        >
+          <!-- Brand column -->
+          <div>
+            <a href="/">
+              <img
+                src="/images/footer-logo.png"
+                alt="TechStaz"
+                class="h-[100px] mb-4"
+              />
+            </a>
+            <p class="text-white/75 text-sm leading-relaxed">
+              Empowering learners and educators worldwide through flexible,
+              expert-led online courses.
+            </p>
+            <div class="flex gap-3 mt-5">
+              <a
+                href="#"
+                class="text-lg text-white bg-[#ffb400] p-1.5 rounded-sm"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook" aria-hidden="true"></i
+              ></a>
+              <a
+                href="#"
+                class="text-lg text-white bg-[#ffb400] p-1.5 rounded-sm"
+                aria-label="X (Twitter)"
+                ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+              ></a>
+              <a
+                href="#"
+                class="text-lg text-white bg-[#ffb400] p-1.5 rounded-sm"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="#"
+                class="text-lg text-white bg-[#ffb400] p-1.5 rounded-sm"
+                aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div>
+            <h3 class="text-[#ffb400] text-xl font-semibold mb-5">
+              Quick Links
+            </h3>
+            <ul class="list-none flex flex-col gap-3">
+              <li>
+                <a
+                  href="/about"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/faq"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/our-services"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Courses -->
+          <div>
+            <h3 class="text-[#ffb400] text-xl font-semibold mb-5">Courses</h3>
+            <ul class="list-none flex flex-col gap-3">
+              <li>
+                <a
+                  href="/frontend-dev"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >Frontend Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/web-design"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >Web Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/data"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                  >Data Analytics</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact info -->
+          <div>
+            <h3 class="text-[#ffb400] text-xl font-semibold mb-5">
+              Contact Info
+            </h3>
+            <ul class="list-none flex flex-col gap-3">
+              <li>
+                <a
+                  href="tel:09068351922"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                >
+                  <i
+                    class="fa-solid fa-phone text-[#ffb400] mr-2"
+                    aria-hidden="true"
+                  ></i
+                  >09068351922
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:ireskitech@gmail.com"
+                  class="text-white/75 hover:text-[#ffb400] text-sm"
+                >
+                  <i
+                    class="fa-solid fa-envelope text-[#ffb400] mr-2"
+                    aria-hidden="true"
+                  ></i
+                  >techstazlimited@gmail.com
+                </a>
+              </li>
+              <li>
+                <span class="text-white/75 text-sm">
+                  <i
+                    class="fa-solid fa-location-dot text-[#ffb400] mr-2"
+                    aria-hidden="true"
+                  ></i
+                  >Port Harcourt, Rivers State
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-white/10 mb-6" />
+
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-3"
+        >
+          <p class="text-white/60 text-sm text-center lg:text-left">
+            &copy; 2026
+            <a href="/" class="text-[#ffb400]">Tech Staz</a> Designed by
+            <a
+              href="https://ireskitech.com"
+              target="_blank"
+              class="text-[#ffb400]"
+              >IreskiTech</a
+            >. All rights reserved.
+          </p>
+          <div class="flex items-center gap-4">
+            <a href="/policy" class="text-white/40 hover:text-white/70 text-sm"
+              >Privacy Policy</a
+            >
+            <span class="w-px h-4 bg-white/20"></span>
+            <a href="/terms" class="text-white/40 hover:text-white/70 text-sm"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/index.js"></script>
+    <script>
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
