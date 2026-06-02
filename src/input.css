@@ -1631,12 +1631,12 @@ footer {
   width: 100%;
 }
 
-#wordsearch ul {
+.wordsearch ul {
   margin: 0px;
   padding: 0px;
 }
 
-#wordsearch ul li {
+.wordsearch ul li {
   float: left;
   width: 12%;
   background-color: #06113f;
@@ -1658,7 +1658,7 @@ footer {
   -o-transition: background-color 0.75s ease;
 }
 
-#wordsearch ul li.selected {
+.wordsearch ul li.selected {
   background-color: red;
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
@@ -1674,47 +1674,24 @@ footer {
 /* === RESPONSIVE CSS === */
 
 @media all and (max-width: 899px) {
-  #wrap {
+  .wrap {
     width: 90%;
   }
 }
 
 @media all and (max-width: 799px) {
-  #wrap {
+  .wrap {
     width: 90%;
     height: auto;
     margin-top: 40px;
     top: 0%;
   }
-  #wordsearch {
+  .wordsearch {
     width: 90%;
     float: none;
     margin: 0 auto;
   }
-  #wordsearch ul li {
+  .wordsearch ul li {
     font-size: 4vw;
-  }
-  #main-content {
-    float: none;
-    width: 90%;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 30px;
-    text-align: justify;
-  }
-  #main-content h1 {
-    text-align: left;
-  }
-  #search input[type="text"] {
-    width: 84%;
-  }
-  #search .input-search {
-    width: 15%;
-  }
-}
-
-@media all and (max-width: 499px) {
-  #main-content h1 {
-    font-size: 28px;
   }
 }
